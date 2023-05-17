@@ -1,0 +1,39 @@
+header {
+  background: #006ce9;
+  position: static;
+  width: 100%;
+  height: 3em;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  list-style-type: none
+}
+
+.navBar li {
+  font-size: 25px;
+  margin-top: 0.3em;
+}
+
+
+.menuButton {
+  height: 2em;
+  width: 5em;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.menuCloseButton {
+  width: 8em;
+  height: 4.4em;
+  margin-left: -2.8em;
+  margin-top: -6.8em;
+  cursor: pointer;
+}

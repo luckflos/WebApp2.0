@@ -1,112 +1,67 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import Card from '~/components/card/card';
 
-import Counter from '~/components/starter/counter/counter';
-import Hero from '~/components/starter/hero/hero';
-import Infobox from '~/components/starter/infobox/infobox';
-import Starter from '~/components/starter/next-steps/next-steps';
 
 export default component$(() => {
   return (
-    <>
-      <Hero />
-      <Starter />
-
-      <div role="presentation" class="ellipsis"></div>
-      <div role="presentation" class="ellipsis ellipsis-purple"></div>
-
-      <div class="container container-center container-spacing-xl">
-        <h3>
-          You can <span class="highlight">count</span>
-          <br /> on me
-        </h3>
-        <Counter />
+    <div class='bContainer'>
+      <div id='card1'>
+        <Card>
+          <p>Hello!  My name is Christopher Kinney, but you may call me Chris!
+          I am a full stack developer with a passion for learning and a love for problem solving.
+          I love to work with new technologies and developing new projects. I am interested in starting new projects, so feel free to contact me with your offer!</p>
+        </Card>
       </div>
-
-      <div class="container container-flex">
-        <Infobox>
-          <div q:slot="title" class="icon icon-cli">
-            CLI Commands
-          </div>
-          <>
-            <p>
-              <code>npm run dev</code>
-              <br />
-              Starts the development server and watches for changes
-            </p>
-            <p>
-              <code>npm run preview</code>
-              <br />
-              Creates production build and starts a server to preview it
-            </p>
-            <p>
-              <code>npm run build</code>
-              <br />
-              Creates production build
-            </p>
-            <p>
-              <code>npm run qwik add</code>
-              <br />
-              Runs the qwik CLI to add integrations
-            </p>
-          </>
-        </Infobox>
-
+      <div class='aboutMe'>About Me</div>
+      <div class='container'>
         <div>
-          <Infobox>
-            <div q:slot="title" class="icon icon-apps">
-              Example Apps
-            </div>
-            <p>
-              Have a look at the <a href="/demo/flower">Flower App</a> or the{' '}
-              <a href="/demo/todolist">Todo App</a>.
+          <Card>
+            <p>I am a veteran of the United States Air Force.  I served for six years in aviation command and control. My love for technology started with learning 
+              about radios and communication networking with different frequencies. During that time I have gotten to travel to many different locations
+              to include: South Korea, Japan, UAE, and Ireland.
             </p>
-          </Infobox>
-
-          <Infobox>
-            <div q:slot="title" class="icon icon-community">
-              Community
-            </div>
-            <ul>
-              <li>
-                <span>Questions or just want to say hi? </span>
-                <a href="https://qwik.builder.io/chat" target="_blank">
-                  Chat on discord!
-                </a>
-              </li>
-              <li>
-                <span>Follow </span>
-                <a href="https://twitter.com/QwikDev" target="_blank">
-                  @QwikDev
-                </a>
-                <span> on Twitter</span>
-              </li>
-              <li>
-                <span>Open issues and contribute on </span>
-                <a href="https://github.com/BuilderIO/qwik" target="_blank">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <span>Watch </span>
-                <a href="https://qwik.builder.io/media/" target="_blank">
-                  Presentations, Podcasts, Videos, etc.
-                </a>
-              </li>
-            </ul>
-          </Infobox>
+          </Card>
+        </div>
+        <div>
+          <Card>
+            <p>I am  a self-taught developer with about 1 year of experience.
+              My passion for learning has lead me to develop a few different skill sets.  I am a big fan of aviation and fly whenever I can afford to do so.
+              If I am not flying, I am usually looking up the newest technology and trying to find fun and new ways to implement it.
+              Currently, I am using the Qwik Framework to develop my front-end application.  
+            </p>
+          </Card>
+        </div>
+        <div >
+          <Card>
+            <p>My list of hobbies seem to grow by the day, but I would say that I am an avid gamer. I also enjoy spending time with my two dogs and disc golfing
+              whenever I can. Camping, mountain hiking, and fishing are some of my favorite outdoor pasttimes. Next year I plan on moving to Alaska where I can enjoy
+              more of the outdoors in my free time.</p>
+          </Card>
         </div>
       </div>
-    </>
+      <div class='aboutMe'>Skills</div>
+      <div class='card'>
+        <Card>
+          <p>List of Skills</p>
+        </Card>
+      </div>
+      <div class='aboutMe'>Projects</div>
+      <div class='card'>
+        <Card>
+          <p> Projects</p>
+        </Card>
+      </div>
+    </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: "Christopher Kinney's Portfolio",
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'Portfolio Website',
     },
   ],
 };

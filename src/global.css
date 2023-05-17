@@ -6,7 +6,7 @@
  *
  */
 
-:root {
+ :root {
   --qwik-dark-blue: #006ce9;
   --qwik-light-blue: #18b6f6;
   --qwik-light-purple: #ac7ff4;
@@ -15,6 +15,13 @@
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
 }
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
 html {
   line-height: 1;
@@ -31,6 +38,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: inherit;
+  
 }
 
 /**
@@ -53,4 +61,57 @@ html {
 body {
   padding: 0;
   line-height: inherit;
+  
 }
+
+.card-content p {
+  padding: 1em;
+  line-height: 2em;
+  padding-top: 0;
+  text-indent: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: bold;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+  gap:.51em;
+  margin-top: 2em;
+  }
+
+  #card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 2em;
+    background-color: #006ce9;
+  }
+
+  .bContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  

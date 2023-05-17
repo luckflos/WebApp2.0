@@ -1,34 +1,32 @@
-import { component$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.module.css';
+import { component$,useStylesScoped$, useSignal } from '@builder.io/qwik';
+import HeaderStyles from './header.css?inline';
 
 export default component$(() => {
+  useStylesScoped$(HeaderStyles);
+  const menuVisible = useSignal(true)
   return (
-    <header class={styles.header}>
-      <div class={['container', styles.wrapper]}>
-        <div class={styles.logo}>
-          <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
-          </a>
-        </div>
-        <ul>
-          <li>
-            <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-              Docs
-            </a>
-          </li>
-          <li>
-            <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-              Examples
-            </a>
-          </li>
-          <li>
-            <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-              Tutorials
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    
+      <header>
+        {menuVisible.value && (
+            <div class="wrapper">
+                <ul class='navBar'>
+                    <li>
+                        <a href="http://localhost:5173/">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:5173/members/#">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Members</span>
+                        </a>
+                    </li>    
+                </ul>
+            </div>
+        )}
+      </header>
+    
   );
 });
+
