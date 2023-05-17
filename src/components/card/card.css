@@ -3,7 +3,6 @@
   border-image: linear-gradient(to right, neon-green, neon-blue);
   border-image-slice: 1;
   background-color: blue;
-  width: 25em;
   height: 20em;
   padding: 1em;
   border-radius: 20px 20px 20px 20px;
@@ -18,4 +17,10 @@
     text-align: left;
 }
   
+.lg .card-content {
+    width: 60em;
+}
   
+.sm .card-content {
+    width: 25em;
+}
