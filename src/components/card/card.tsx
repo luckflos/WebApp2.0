@@ -8,8 +8,8 @@ interface CardProps {
 export default component$((props: CardProps) => {
     useStylesScoped$(CardStyles);
     return (
-        <div class={`card-wrapper ${props.size}`}>
-            <div class='card-content'>
+        <div class={`rounded-2xl p-4 bg-blue border-4 border-green h-80 ${props.size}`}>
+            <div class='card-content border-4 border-black bg-black rounded-2xl text-left w-full h-full'>
                 <Slot />
             </div>
         </div>
