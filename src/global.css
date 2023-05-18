@@ -63,7 +63,11 @@ html {
 body {
   padding: 0;
   line-height: inherit;
-  
+}
+
+.card-conter {
+  display: flex;
+  flex-direction: row;
 }
 
 .card-content p {

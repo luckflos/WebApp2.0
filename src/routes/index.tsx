@@ -46,16 +46,16 @@ export default component$(() => {4
       <div class='aboutMe'>Skills</div>
       <div class='mt-8'>
         <Card size='lg'>
-          <p>List of Skills</p>
+          <p><InHtml5 class="text-7xl"/></p>
+          <p><InCss3 class="text-7xl"/></p>
+          <p><SiMicrosoftsqlserver class="text-7xl"/></p>
+          <p><SiPowerbi class="text-7xl"/></p>
         </Card>
       </div>
       <div class='aboutMe'>Projects</div>
       <div class='mt-8'>
         <Card size='lg'>
-          <p><InHtml5 class="text-7xl"/></p>
-          <p><InCss3 class="text-7xl"/></p>
-          <p><SiMicrosoftsqlserver class="text-7xl"/></p>
-          <p><SiPowerbi class="text-7xl"/></p>
+          <p>Projects</p>
         </Card>
       </div>
     </div>
