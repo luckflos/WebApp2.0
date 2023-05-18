@@ -76,33 +76,6 @@ body {
   text-align: center;
  }
 
- .container {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap:.51em;
-  margin-top: 2em;
-  }
-
-  #card1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 5em;
-  }
-
-  .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em;
-  }
-
   .aboutMe {
     display: flex;
     flex-direction: column;
@@ -114,7 +87,4 @@ body {
     background-color: #006ce9;
   }
 
-  .bContainer {
-    display: flex;
-    flex-direction: column;
-  }
+  
