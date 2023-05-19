@@ -8,21 +8,8 @@ export default component$(() => {
     
       <header>
         {menuVisible.value && (
-            <div class="wrapper">
-                <ul class='navBar'>
-                    <li>
-                        <a href="http://localhost:5173/">
-                            <span class="icon"><i class="fas fa-home"></i></span>
-                            <span class="item">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://localhost:5173/members/#">
-                            <span class="icon"><i class="fas fa-desktop"></i></span>
-                            <span class="item">Members</span>
-                        </a>
-                    </li>    
-                </ul>
+            <div>
+                <div class='w-full h-full text-center pt-1 animate-bounce text-4xl text-red'>In Development</div>
             </div>
         )}
       </header>

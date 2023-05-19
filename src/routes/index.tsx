@@ -1,23 +1,23 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import Card from '~/components/card/card';
-import { InHtml5, InCss3 } from '@qwikest/icons/iconoir';
-import {SiMicrosoftsqlserver, SiPowerbi} from '@qwikest/icons/simpleicons';
+import {SiMicrosoftsqlserver, SiPowerbi, SiGit, SiJavascript, SiTailwindcss, SiGithub, SiHtml5, SiCss3} from '@qwikest/icons/simpleicons';
+import { QwikLogo } from '~/components/icons/qwik';
 
 
 
 export default component$(() => {4
   return (
-    <div class='flex flex-row flex-wrap justify-evenly mt-8'>
-      <div>
+    <div class='mt-8'>
+      <div class='w-full flex flex-row flex-wrap justify-center'>
         <Card size='sm'>
           <p>Hello!  My name is Christopher Kinney, but you may call me Chris!
           I am a full stack developer with a passion for learning and a love for problem solving.
           I love to work with new technologies and developing new projects. I am interested in starting new projects, so feel free to contact me with your offer!</p>
         </Card>
       </div>
-      <div class='aboutMe'>About Me</div>
-      <div class='flex flex-row flex-wrap justify-evenly w-full mt-8'>
+      <div class='aboutMe w-screen'>About Me</div>
+      <div class='flex flex-row flex-wrap justify-between h-auto w-full mt-8'>
         <div>
           <Card size='sm'>
             <p>I am a veteran of the United States Air Force.  I served for six years in aviation command and control. My love for technology started with learning 
@@ -43,17 +43,25 @@ export default component$(() => {4
           </Card>
         </div>
       </div>
-      <div class='aboutMe'>Skills</div>
-      <div class='mt-8'>
+      <div class='aboutMe w-screen'>Skills</div>
+      <div class='mt-8 w-full flex flex-row justify-center'>
         <Card size='lg'>
-          <p><InHtml5 class="text-7xl"/></p>
-          <p><InCss3 class="text-7xl"/></p>
-          <p><SiMicrosoftsqlserver class="text-7xl"/></p>
-          <p><SiPowerbi class="text-7xl"/></p>
+          <div class='flex flex-row flex-wrap justify-start items-center mt-4'> 
+            <p><SiHtml5 class="text-7xl"/></p>
+            <p><SiCss3 class="text-7xl"/></p>
+            <p><SiJavascript class="text-7xl"/></p>
+            <p><SiMicrosoftsqlserver class="text-7xl"/></p>
+            <p><SiPowerbi class="text-7xl"/></p>
+            <p><SiGit class="text-7xl"/></p>
+            <p><SiGithub class="text-7xl"/></p>
+            <p><SiTailwindcss class="text-7xl"/></p>
+            <QwikLogo></QwikLogo>
+          </div>
+          
         </Card>
       </div>
-      <div class='aboutMe'>Projects</div>
-      <div class='mt-8'>
+      <div class='aboutMe w-screen'>Projects</div>
+      <div class='mt-8 w-full flex flex-row justify-center'>
         <Card size='lg'>
           <p>Projects</p>
         </Card>

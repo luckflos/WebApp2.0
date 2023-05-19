@@ -85,8 +85,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: 100%;
     margin-top: 2em;
     background-color: #006ce9;
   }
